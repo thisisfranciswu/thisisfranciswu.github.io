@@ -11,14 +11,15 @@
     @include sans;
     font-weight: 900;
     font-size: 1.75rem;
-    letter-spacing: -.05rem;
     margin: 0;
   }
 }
 
 // page header styles
 
-.page-header { padding: 1.5rem 0;
+.page-header {
+
+  padding: 1.5rem 0;
 
   .avatar {
     width: 6.25rem;
@@ -35,7 +36,6 @@
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
-    letter-spacing: -.15rem;
     line-height: 1;
     margin: 1rem 0 0;
   }
@@ -54,12 +54,22 @@
       font-weight: 300;
       font-size: 1.75rem;
       line-height: 2rem;
+      margin: 0;
       text-align: center;
     }
+    margin-bottom: 1rem;
   }
 
   .executive-summary {
     @include media_larger_than_mobile { font-size: 1.125rem; }
+    text-align: center;
+    a {
+      color: $white;
+      &:hover {
+        fill: #fff;
+        @include transition(all .2s ease);
+      }
+    }
   }
 }
 
@@ -67,33 +77,26 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  position: relative;
-  top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
-  padding-top: .4rem;
-
-  @include media_larger_than_mobile {
-    float: right;
-    border-top: none;
-    padding-top: 0;
-  }
 
   .icon-link-item {
     display: inline-block;
-    margin-left: 5px;
+    margin: 0 0.25rem;
   }
 
-  .icon-link { display: inline-block;
-
+  .icon-link {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
     &:hover .icon path {
-      fill: #333;
+      fill: #fff;
       @include transition(all .2s ease);
     }
   }
 
   .icon {
-    height: 28px;
+    height: 2rem;
+    width: 2rem;
   }
 }
 
@@ -130,7 +133,6 @@
     @include sans_bold;
     margin: 0 0 .75rem;
     font-size: 1.5rem;
-    letter-spacing: -.05rem;
     line-height: 1;
   }
 
@@ -195,7 +197,6 @@
       font-size: 2rem;
       margin: 0 0 .2rem;
     }
-    a { color: $white; }
   }
   .section-header {
     @include section_border_thin;
