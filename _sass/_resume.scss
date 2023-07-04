@@ -32,11 +32,10 @@
   }
 
   .header-name {
-    @include sans;
-    font-size: 3rem;
-    font-weight: 900;
+    @include sans_bold;
+    font-size: 2rem;
     text-align: center;
-    line-height: 1;
+    line-height: 1.6;
     margin: 1rem 0 0;
   }
 
@@ -52,10 +51,12 @@
     .header-title {
       @include sans;
       font-weight: 300;
-      font-size: 1.75rem;
-      line-height: 2rem;
+      font-size: 1rem;
+      line-height: 1.6rem;
       margin: 0;
       text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.375rem;
     }
     margin-bottom: 1rem;
   }
@@ -163,63 +164,4 @@
   }
 
   .resume-item-copy { margin: .75rem 0 0; }
-}
-
-// footer styles
-
-.page-footer {
-  // border-top: 4px solid #c7c7c7;
-  // padding-top: 1.5rem;
-  // text-align: center;
-  // margin-bottom: 3rem;
-
-  // .footer-line {
-  //   margin: 0;
-  //   font-size: .875rem;
-  //   color: #999;
-
-  //   > a {
-  //     font-weight: 700;
-  //     color: #333;
-  //   }
-  // }
-}
-
-.print-only { display: none !important }
-
-@media print {
-  .no-print { display: none !important }
-  .print-only { display: block !important }
-  body { font-size: 12px; line-height: 1rem; }
-  .page-header { padding: 1rem 0 .2rem;
-    .header-name {
-      @include sans_bold;
-      font-size: 2rem;
-      margin: 0 0 .2rem;
-    }
-  }
-  .section-header {
-    @include section_border_thin;
-    margin-bottom: 1rem;
-    h2 { font-size: 1.2rem; line-height: 1.5rem; }
-  }
-  .content-section {
-    margin: 0 0 1rem;
-    .resume-item { margin-bottom: 1rem; }
-    .resume-item-title {
-      font-size: 16px;
-      line-height: .7em;
-    }
-
-    .resume-item-details {
-      font-size: 12px;
-      margin: 0 0 .75rem;
-      line-height: .7em;
-      font-style:italic;
-
-      &.award-title {
-        font-size: 11px;
-      }
-    }
-  }
 }
