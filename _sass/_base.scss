@@ -13,7 +13,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
-  &::before {
+  &:before {
     display: block;
     content: "";
     position: absolute;
@@ -25,7 +25,7 @@ html {
     background: $black;
     opacity: 0.5;
   }
-  &::after {
+  &:after {
     display: block;
     content: "";
     position: absolute;
