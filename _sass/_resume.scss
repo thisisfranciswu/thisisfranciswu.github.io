@@ -31,6 +31,7 @@
 
   .header-name {
     @include sans_bold;
+    @include text_shadow;
     font-size: 2rem;
     text-align: center;
     line-height: 1.6;
@@ -38,17 +39,10 @@
     letter-spacing: 0.125rem;
   }
 
-  .header-contact-info {
-    @include sans;
-    text-align: center;
-  }
-  .header-contact-info p a {
-    color: inherit;
-  }
-
   .title-bar {
     .header-title {
       @include sans;
+      @include text_shadow;
       font-weight: 300;
       font-size: 0.875rem;
       margin: 0;
@@ -61,6 +55,7 @@
 
   .executive-summary {
     @include media_larger_than_mobile { font-size: 1.125rem; }
+    @include text_shadow;
     text-align: center;
     a {
       color: $white;
