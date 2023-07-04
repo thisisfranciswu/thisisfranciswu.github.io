@@ -21,10 +21,11 @@
 .page-header { padding: 1.5rem 0;
 
   .avatar {
-    width: 95px;
-    max-width: 100%;
+    width: 6.25rem;
+    height: 6.25rem;
     overflow: hidden;
-    @include border-radius(100px);
+    @include border-radius(6.25rem);
+    border: 0.25rem solid $white;
     margin: 0 auto;
     display: block;
   }

@@ -1,21 +1,21 @@
 // Variables
 // ---------------------------------------/
 
-$container-width: 980px !default;
-$grid-gutter:     10px !default;
+$container-width: 60rem !default;
+$grid-gutter:     1.25rem !default;
 
 // Colors
-$white:             #fff;
-$black:             #333;
+$white:             rgba(255, 255, 255, 0.87);
+$black:             #404040;
 
 // Styles
-$text_color:        $black;
+$text_color:        $white;
 
 // Font stack
-$body-font: "Inter", sans-serif !default;
+$body-font: "Manrope", sans-serif !default;
 
 // The base body size
-$body-font-size: 16px !default;
+$body-font-size: 1rem !default;
 
 // Monospace font stack
 $mono-font: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
