@@ -93,7 +93,7 @@
     &:hover {
       box-shadow: inset 0 0 0 1px #fff;
       outline: 1px solid #fff;
-      border-radius: 2rem;
+      @include border-radius(2rem);
       &.icon path {
         fill: #fff;
         @include transition(all .2s ease);
