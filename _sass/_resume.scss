@@ -49,24 +49,12 @@
   }
 
   .title-bar {
-    @include section_border;
-    margin-top: 2rem;
-    padding: .4rem 0;
-    @include clearfix;
-
     .header-title {
       @include sans;
       font-weight: 300;
       font-size: 1.75rem;
       line-height: 2rem;
-      letter-spacing: -.05rem;
       text-align: center;
-      margin: 0 0 .5rem;
-
-      @include media_larger_than_mobile {
-        float: left;
-        margin: 0;
-      }
     }
   }
 
@@ -178,21 +166,21 @@
 // footer styles
 
 .page-footer {
-  border-top: 4px solid #c7c7c7;
-  padding-top: 1.5rem;
-  text-align: center;
-  margin-bottom: 3rem;
+  // border-top: 4px solid #c7c7c7;
+  // padding-top: 1.5rem;
+  // text-align: center;
+  // margin-bottom: 3rem;
 
-  .footer-line {
-    margin: 0;
-    font-size: .875rem;
-    color: #999;
+  // .footer-line {
+  //   margin: 0;
+  //   font-size: .875rem;
+  //   color: #999;
 
-    > a {
-      font-weight: 700;
-      color: #333;
-    }
-  }
+  //   > a {
+  //     font-weight: 700;
+  //     color: #333;
+  //   }
+  // }
 }
 
 .print-only { display: none !important }
@@ -207,6 +195,7 @@
       font-size: 2rem;
       margin: 0 0 .2rem;
     }
+    a { color: $white; }
   }
   .section-header {
     @include section_border_thin;

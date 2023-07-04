@@ -23,7 +23,7 @@ html {
     bottom: 0;
     left: 0;
     background: $black;
-    opacity: 0.5;
+    opacity: 0.333;
   }
   &:after {
     display: block;
@@ -34,12 +34,12 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    backdrop-filter: blur(4rem);
+    backdrop-filter: blur(2rem);
   }
 }
 
 body{
-  @include serif;
+  @include sans;
   color: $text_color;
   font-size: $body-font-size;
   line-height: 1.5;
