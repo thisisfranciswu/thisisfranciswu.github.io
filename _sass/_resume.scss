@@ -52,12 +52,11 @@
     .header-title {
       @include sans;
       font-weight: 300;
-      font-size: 1rem;
-      line-height: 1.6rem;
+      font-size: 0.875rem;
       margin: 0;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 0.375rem;
+      letter-spacing: 0.25rem;
     }
     margin-bottom: 1rem;
   }
@@ -91,9 +90,13 @@
     display: inline-block;
     height: 2rem;
     width: 2rem;
-    &:hover .icon path {
-      fill: #fff;
-      @include transition(all .2s ease);
+    &:hover {
+      box-shadow: inset 0 0 0 1px #fff;
+      outline: 1px solid #fff;
+      &.icon path {
+        fill: #fff;
+        @include transition(all .2s ease);
+      }
     }
   }
 
