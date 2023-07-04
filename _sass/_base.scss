@@ -7,17 +7,26 @@
 }
 
 html {
-  background-image: url("/images/body_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  &:before {
+    background-image: url("/images/body_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(1rem);
+    -webkit-filter: blur(1rem);
+  }
 }
 
 body{
   @include serif;
   color: $text_color;
-  font-size: 16px;
+  font-size: $body-font-size;
   line-height: 1.5;
 }
 
