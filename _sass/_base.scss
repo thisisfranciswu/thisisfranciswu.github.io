@@ -13,6 +13,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
+  position: relative;
   &:before {
     display: block;
     content: "";
@@ -23,7 +24,7 @@ html {
     bottom: 0;
     left: 0;
     background: $black;
-    opacity: 0.333;
+    opacity: 0.5;
   }
   &:after {
     display: block;
@@ -34,7 +35,7 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(3rem);
   }
 }
 
