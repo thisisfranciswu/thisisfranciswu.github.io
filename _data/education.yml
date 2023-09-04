@@ -1,13 +1,34 @@
-# Degree
-- degree: Bachelor of Arts, Human Rights
-  uni: Yale University
-  year: 2004 &mdash; 2008
-  awards:
-    - award: Summa Cumme Laude graduate
-  summary: If you had any meaningful roles at college, feel free to write about them here
+- credential: Certification
+  name: "Domain Driven Design: Fundamentals"
+  issuer: Udemy
+  date: Jun 2023
+  url: https://www.ude.my/UC-fdff18d6-3f98-4c4b-9ade-bc5e0ac17e73
 
-- degree: High School Diploma
-  uni: Springfield High School
-  year: 2004
-  award: Most likely to succeed
-  summary: You can choose to have either a single or multiple awards
+- credential: Certification
+  name: Object-Oriented UX (OOUX) Fundamentals
+  issuer: Udemy
+  date: May 2023
+  url: https://www.ude.my/UC-130b4e96-03fd-4008-a3db-3de6190fb108
+
+- credential: Certification
+  name: Software Product Management
+  issuer: Coursera
+  date: Mar 2020
+  url: https://coursera.org/share/55bc815dd2716c72f2fd7662443d527d
+
+- credential: Certification
+  name: AI For Everyone
+  issuer: Coursera
+  date: Mar 2019
+  url: https://www.coursera.org/account/accomplishments/verify/CE3M7NM25VTZ
+
+- credential: Certification
+  name: The Music of the Beatles
+  issuer: Coursera
+  date: Jul 2015
+  url: https://www.coursera.org/account/accomplishments/verify/Y3LJNCG245WQ
+
+- credential: Diploma of College Studies
+  name: Computer Science Technology
+  issuer: Champlain College Saint-Lambert
+  date: 1998
