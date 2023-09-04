@@ -32,8 +32,12 @@
 
   .header-name {
     @include sans_bold;
+<<<<<<< Updated upstream
     @include text_shadow;
     font-size: 2rem;
+=======
+    font-size: 2.5rem;
+>>>>>>> Stashed changes
     text-align: center;
     line-height: 1.6;
     margin: 1rem 0 0;
