@@ -1,0 +1,20 @@
+- name: Gherkin for Designers
+  abstract: Gherkin is a powerful tool for describing system behaviours. By annotating your design deliverables with Gherkin, you will win the hearts of product, development, and documentation teams.
+  date: Apr 2022
+  url: https://medium.com/user-experience-design-1/gherkin-for-designers-e54def12ce77
+  image_url: images/writings/gherkin.jpg
+  image_alt: Photo of gherkins
+
+- name: Designing Hazel’s Accessible Color System
+  abstract: What happens when your simple color palette also needs to accommodate interaction states, sentiment, accessibility requirements, and more?
+  date: Mar 2022
+  url: https://medium.com/@thisisfranciswu/designing-hazels-accessible-color-system-part-1-8a73a2298c35
+  image_url: images/writings/color_system.jpg
+  image_alt: Diagram illustrating Asana’s design tokens
+
+- name: Designing collections for mobile web experiences
+  abstract: How do you allow users to search, filter, sort, and perform batch operations on collections when space is so limited?
+  date: Mar 2022
+  url: https://medium.com/user-experience-design-1/designing-collections-for-mobile-web-experiences-7b89da9aff09
+  image_url: images/writings/mobile_collections.jpg
+  image_alt: Screenshots illustrating desktop to mobile conversion
