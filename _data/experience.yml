@@ -2,16 +2,19 @@
   position: Senior UX Designer
   duration: Jun 2020 &mdash; Present
   summary: Building and maintaining a design system to accelerate the design and development of OneSpan software products and features at scale.
+  url: onespan.com
 
 - company: TrackTik
   position: Product Manager
   duration: Jul 2019 &mdash; Jun 2020
   summary: Managed the development of a mobile app that facilitates shift worker scheduling, communication, and retention for security service companies.
+  url: tracktik.com
 
 - company: Acquisio
   position: Product Manager
   duration: Jun 2015 &mdash; Jul 2019
   summary: Built a turnkey Google Ads solution for SMBs, contributing to Acquisio’s eventual acquisition by Web.com. Fulfilled triple duties of UX Designer, Front-End Developer, and Product Manager, facilitating unprecedented development velocity and deployment frequency within Acquisio. Collaborated with multidisciplinary teams to ensure the product’s effective communications, regulatory and billing compliance, localization, customer retention, and campaign performance across 300+ supported verticals. Honourable mentions in 3 company-wide hackathons.
+  url: acquisio.com
 
 - company: Qwalify
   position: Lead UX Developer
@@ -26,12 +29,7 @@
 - company: SocialGrapes
   position: User Experience Designer
   duration: Jul 2010 &mdash; Jan 2012
-  summary: An oenophile's social network, which received honourable mention by Robert Scoble during the 2010 San Francisco Vintners Market. Developed design language system for both web and mobile apps while also developing the web app’s front-end and design language system.
-
-- company: City Realty
-  position: Web Design Integrator
-  duration: Feb 2010 &mdash; Jul 2010
-  summary: City Realty is a New York City-based real estate listings site where I further refined my skills in web design and front-end development.
+  summary: An oenophile's social network, which received an honourable mention by Robert Scoble during the 2010 San Francisco Vintners Market. Developed design language system for both web and mobile apps while also developing the web app’s front-end and design language system.
 
 - company: Webdweller
   position: Web Designer and Front-End Developer
@@ -43,17 +41,13 @@
   duration: Oct 2007 &mdash; Oct 2009
   summary: A recruiting portal Acquired by Talemetry. Learned front-end development within a Ruby on Rails stack. Further integrated myself into the development team by learning to work with GitHub while developing Standout Jobs’ design language system.
 
-- company: Spherika
-  position: Web Designer
-  duration: Feb 2007 &mdash; Oct 2007
-  summary: Spherika is a Web agency where I learned to design for the Web at scale. My duties included design and CMS integration, JavaScript development, email campaign creation, and site and email analytics.
-
 - company: Wine Price Exchange
   position: Web Designer and Integrator
   duration: Sep 2004 &mdash; Oct 2006
   summary: Wine Price Exchange was a wine cellar management and appraisal app. At the company, I focused my web design skills into application design while working with developers. These skills included wireframing and prototyping, design integration into PHP. There, I continued to champion business blogging and usability.
 
 - company: Mediagrif Interactive Technologies
-  position: Customer Support, Data Entry, Software Development, Marketing
+  position: Generalist
   duration: Jun 1998 &mdash; Sep 2003
-  summary: Mediagrif operated a B2B marketplace for electronic component resellers. Provided customer support, often technical in nature. Performed database entry before improving its processes and rebuilding its core tool to increase database entry by 500%. Joined its marketing department and further developed skills in web design and brand development. Subsequently engaged in blogging and usability evangelism within the organization.
+  summary: Mediagrif builds and operates B2B marketplaces for resellers. Provided customer support, often technical in nature. Performed database entry before improving its processes and rebuilding its core tool to increase database entry by 500%. Joined its marketing department and further developed skills in web design and brand development. Subsequently engaged in blogging and usability evangelism within the organization.
+  url: mediagrif.com

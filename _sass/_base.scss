@@ -7,45 +7,59 @@
 }
 
 html {
-  background-image: url("/images/body_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
   position: relative;
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: $black;
-    opacity: 0.5;
-  }
   &:after {
     display: block;
     content: "";
     position: absolute;
-    z-index: 2;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    backdrop-filter: blur(3rem);
+    background-image: url("/images/body_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 2;
+    filter: blur(2rem);
+    -webkit-filter: blur(2rem);
   }
 }
 
 body{
   @include sans;
+  background-color: lighten($black, 15%);
   color: $text_color;
   font-size: $body-font-size;
   line-height: 1.5;
   position: relative;
   z-index: 3;
+  @include media_mobile {
+    zoom: 0.875;
+  }
+}
+
+a {
+  color: $text_color;
+  &[target="_blank"] {
+    &:after {
+      font-family: "Material Symbols Rounded";
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 100,
+        'GRAD' -25,
+        'opsz' 24;
+      content: "\e89e";
+      margin-left: 0.125rem;
+      zoom: 0.75;
+      vertical-align: top;
+    }
+  }
+  &:hover {
+    text-decoration:none;
+  }
 }
 
 .wrapper:before,
@@ -53,9 +67,12 @@ body{
 .wrapper:after { clear: both; }
 .wrapper {
   max-width: 45rem;
-  padding: 2rem;
+  padding: 3rem;
   margin: 0 auto;
   zoom: 1;
+  @include media_mobile {
+    padding: 2rem;
+  }
 }
 
 // clearfix (now called group,
