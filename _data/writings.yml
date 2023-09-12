@@ -1,7 +1,14 @@
+- name: Resolving complex forms with OOUX
+  abstract: Simplify complex forms by recognizing complex objects.
+  date: Sep 2023
+  url: https://uxdesign.cc/resolving-complex-forms-f104e476f3ff
+  image_url: images/writings/complex_forms.jpg
+  image_alt: Abstraction of emerging complexity
+
 - name: Gherkin for Designers
   abstract: Gherkin is a powerful tool for describing system behaviours. By annotating your design deliverables with Gherkin, you will win the hearts of product, development, and documentation teams.
   date: Apr 2022
-  url: https://medium.com/user-experience-design-1/gherkin-for-designers-e54def12ce77
+  url: https://uxdesign.cc/gherkin-for-designers-e54def12ce77
   image_url: images/writings/gherkin.jpg
   image_alt: Photo of gherkins
 
@@ -15,6 +22,6 @@
 - name: Designing collections for mobile web experiences
   abstract: How do you allow users to search, filter, sort, and perform batch operations on collections when space is so limited?
   date: Mar 2022
-  url: https://medium.com/user-experience-design-1/designing-collections-for-mobile-web-experiences-7b89da9aff09
+  url: https://uxdesign.cc/designing-collections-for-mobile-web-experiences-7b89da9aff09
   image_url: images/writings/mobile_collections.jpg
   image_alt: Screenshots illustrating desktop to mobile conversion
