@@ -1,3 +1,10 @@
+- name: "Design Concept: What if Pocket, Overcast, and YouTube had a baby?"
+  abstract: Earwig is an audio app for listeners with rich information diets.
+  date: Oct 2023
+  url: https://medium.com/@thisisfranciswu/design-concept-what-if-pocket-overcast-and-youtube-had-a-baby-0eec993a927e
+  image_url: images/writings/earwig.jpg
+  image_alt: Close-up of person’s head wearing headphones and data flowing into them
+
 - name: Resolving complex forms with OOUX
   abstract: Simplify complex forms by recognizing complex objects.
   date: Sep 2023
