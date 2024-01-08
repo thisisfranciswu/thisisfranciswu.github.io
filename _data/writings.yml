@@ -1,3 +1,10 @@
+- name: The Opportunity Cost of Rigidity
+  abstract: Justifying Prioritizing Design Systems, Robust DevOps Culture, and Effective Product Management Through the Lens of Risk
+  date: Jan 2024
+  url: https://medium.com/design-bootcamp/the-opportunity-cost-of-rigidity-8e1f7d5c3f55
+  image_url: images/writings/opportunity_cost.jpg
+  image_alt: A ship in a stormy seascape in the style of Ivan Aivazovsky
+
 - name: "Design Concept: What if Pocket, Overcast, and YouTube had a baby?"
   abstract: Earwig is an audio app for listeners with rich information diets.
   date: Oct 2023
