@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <header class="page-header">
+
+      <div class="wrapper">
+        <img src="images/avatar.jpg" alt="Headshot of Francis Wu" class="header-avatar">
+        <h1 class="header-name">Hi, I'm Francis Wu 👋</h1>
+        <p class="executive-summary">{{ site.profile_summary }}</p>
+        {% include icon-links.html %}
+      </div>
+
+    </header>
+
+    <section class="content-section">
+      <div class="wrapper">
+        <header class="section-header">
+          <h2>Articles</h2>
+        </header>
+        {% for writing in site.data.writings %}
+          <div class="profile-item has-thumbnail">
+            <div class="profile-item-not-thumbnail">
+              <h3 class="profile-item-title">
+                <a href="{{ writing.url }}" target="_blank">{{ writing.name }}</a>
+              </h3>
+              <p class="profile-item-details">{{ writing.date }}</p>
+              <p class="profile-item-description">{{ writing.abstract }}</p>
+            </div>
+            <div class="profile-item-thumbnail">
+              <img src="{{ writing.image_url }}" alt="{{ writing.image_alt }}"/>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="wrapper">
+        <header class="section-header">
+          <h2>Work</h2>
+        </header>
+        {% for experience in site.data.experience %}
+          <div class="profile-item is-timeline">
+            <h3 class="profile-item-title subdued">
+              <strong>{{ experience.position }}</strong>
+              at
+              <strong>
+                {% if experience.url %}
+                  <a href="{{ experience.url }}" target="_blank">{{ experience.company }}</a>
+                {% else %}
+                  {{ experience.company }}
+                {% endif %}
+              </strong>
+            </h3>
+            <p class="profile-item-details">{{ experience.duration }}</p>
+            <p class="profile-item-description">{{ experience.summary }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="wrapper">
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+        {% for education in site.data.education %}
+          <div class="profile-item is-timeline">
+            <h3 class="profile-item-title">{{ education.name }}</h3>
+            <p class="profile-item-details">{{ education.date }}</p>
+            <p class="profile-item-description">
+              {% if education.url %}
+                <a href="{{ education.url }}" target="_blank">{{ education.credential }}</a>
+              {% else %}
+                {{ education.credential }}
+              {% endif %}
+              issued by
+              {{ education.issuer }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="wrapper">
+        <header class="section-header">
+          <h2>About</h2>
+        </header>
+        <img src="images/about.jpg" alt="Three-quarter portrait of Francis Wu" class="about"/>
+        <p>Hi! I'm Francis Wu, a husband, dad, and designer from Montreal. I've had the opportunity to work with amazing people who taught me so much. Now I try to help designers and organizations level up the way I did. I'm currently a senior designer at <a href="onespan.com" target="_blank">OneSpan</a>.</p>
+        <p>Born in Hong Kong and raised in Montreal, I started tinkering with design at the age of 10 when my family got an <a href="https://en.wikipedia.org/wiki/Apple_IIc" target="_blank">Apple IIc</a> and a copy of <a href="https://en.wikipedia.org/wiki/The_Print_Shop" target="_blank">The Print Shop</a>. What followed was a long love affair with PCs and bootlegged copies of Photoshop that culminated in a degree in computer science.</p>
+        <p>Joining a B2B internet startup in '98 revealed customer issues rooted in poor design. I thought this was something I could help people with. I picked up a copy of <a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things" target="_blank">The Design of Everyday Things</a> and learned HTML and CSS.</p>
+        <p>Between '07 and '19, I collaborated with test-driven developers, worked with product managers who could query databases for analytics, and lead teams that deployed code multiple times a day. I've seen what "good" looks like and I'm committed to helping others recognize they need not settle for less.</p>
+        <p>Beyond work, I enjoy reading, podcasts, running, cooking, board games, and being a less-than-perfect handyman.</p>
+      </div>
+    </section>
+
+  </body>
+
+</html>

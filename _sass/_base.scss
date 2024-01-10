@@ -23,8 +23,8 @@ html {
     background-size: cover;
     opacity: 0.5;
     z-index: 2;
-    filter: blur(2rem);
-    -webkit-filter: blur(2rem);
+    filter: blur(8rem);
+    -webkit-filter: blur(8rem);
   }
 }
 
@@ -33,7 +33,7 @@ body{
   background-color: lighten($black, 15%);
   color: $text_color;
   font-size: $body-font-size;
-  line-height: 1.5;
+  line-height: 2;
   position: relative;
   z-index: 3;
   @include media_mobile {
@@ -67,7 +67,7 @@ a {
 .wrapper:after { clear: both; }
 .wrapper {
   max-width: 45rem;
-  padding: 3rem;
+  padding: 4rem 0;
   margin: 0 auto;
   zoom: 1;
   @include media_mobile {
