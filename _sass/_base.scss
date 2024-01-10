@@ -19,7 +19,6 @@ html {
     background-image: url("/images/body_bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
-/*    background-attachment: fixed;*/
     background-size: cover;
     z-index: 2;
   }
@@ -27,9 +26,9 @@ html {
 
 body{
   @include sans;
-/*  backdrop-filter: blur(8rem) brightness(33%) contrast(66%) saturate(200%);
+  backdrop-filter: blur(8rem) brightness(33%) contrast(66%) saturate(200%);
   -webkit-backdrop-filter: blur(8rem) brightness(33%) contrast(66%) saturate(200%);
-*/  color: $text_color;
+  color: $text_color;
   font-size: $body-font-size;
   line-height: 2;
   position: relative;
