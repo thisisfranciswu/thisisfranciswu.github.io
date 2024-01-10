@@ -7,11 +7,15 @@
 }
 
 html {
+  height: 100vh;
+}
+
+html {
   position: relative;
   &:after {
     display: block;
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
