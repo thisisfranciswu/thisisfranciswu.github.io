@@ -8,29 +8,17 @@
 
 html {
   position: relative;
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("/images/body_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.5;
-    z-index: 2;
-    filter: blur(8rem);
-    -webkit-filter: blur(8rem);
-  }
+  background-color: $black;
+  background-image: url("/images/body_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body{
   @include sans;
-  background-color: lighten($black, 15%);
+  backdrop-filter: blur(8rem) brightness(50%);
   color: $text_color;
   font-size: $body-font-size;
   line-height: 2;
