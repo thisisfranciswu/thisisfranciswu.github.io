@@ -12,8 +12,8 @@ sass:
 profile_summary: "I'm a multi-disciplinary product designer based in Montreal. I specialize in building user-friendly software products that can scale without comprimising your agility."
 
 # Profile social links
-resume_social_links:
-  resume_twitter_url:           "http://twitter.com/thisisfranciswu"
-  resume_dribbble_url:          "https://dribbble.com/thisisfranciswu"
-  resume_linkedin_url:          "https://www.linkedin.com/in/thisisfranciswu"
-  resume_medium_url:            "https://medium.com/@thisisfranciswu"
+profile_links:
+  twitter_url:           "http://twitter.com/thisisfranciswu"
+  dribbble_url:          "https://dribbble.com/thisisfranciswu"
+  linkedin_url:          "https://www.linkedin.com/in/thisisfranciswu"
+  medium_url:            "https://medium.com/@thisisfranciswu"

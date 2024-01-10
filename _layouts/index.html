@@ -11,7 +11,6 @@
         <img src="images/avatar.jpg" alt="Headshot of Francis Wu" class="header-avatar">
         <h1 class="header-name">Hi, I'm Francis Wu 👋</h1>
         <p class="executive-summary">{{ site.profile_summary }}</p>
-        {% include icon-links.html %}
       </div>
 
     </header>
@@ -43,21 +42,21 @@
         <header class="section-header">
           <h2>Work</h2>
         </header>
-        {% for experience in site.data.experience %}
+        {% for work in site.data.work %}
           <div class="profile-item is-timeline">
             <h3 class="profile-item-title subdued">
-              <strong>{{ experience.position }}</strong>
+              <strong>{{ work.position }}</strong>
               at
               <strong>
-                {% if experience.url %}
-                  <a href="{{ experience.url }}" target="_blank">{{ experience.company }}</a>
+                {% if work.url %}
+                  <a href="{{ work.url }}" target="_blank">{{ work.company }}</a>
                 {% else %}
-                  {{ experience.company }}
+                  {{ work.company }}
                 {% endif %}
               </strong>
             </h3>
-            <p class="profile-item-details">{{ experience.duration }}</p>
-            <p class="profile-item-description">{{ experience.summary }}</p>
+            <p class="profile-item-details">{{ work.duration }}</p>
+            <p class="profile-item-description">{{ work.summary }}</p>
           </div>
         {% endfor %}
       </div>
@@ -97,6 +96,26 @@
         <p>Joining a B2B internet startup in '98 revealed customer issues rooted in poor design. I thought this was something I could help people with. I picked up a copy of <a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things" target="_blank">The Design of Everyday Things</a> and learned HTML and CSS.</p>
         <p>Between '07 and '19, I collaborated with test-driven developers, worked with product managers who could query databases for analytics, and lead teams that deployed code multiple times a day. I've seen what "good" looks like and I'm committed to helping others recognize they need not settle for less.</p>
         <p>Beyond work, I enjoy reading, podcasts, running, cooking, board games, and being a less-than-perfect handyman.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="wrapper">
+        <header class="section-header">
+          <h2>Connect</h2>
+        </header>
+        {% assign min = 0 %}
+        {% assign max = site.data.topics.size %}
+        {% assign diff = max | minus: min %}
+        {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+        <p>I'm always up for a chat about design, working together, and {{ site.data.topics[randomNumber].topic }}.</p>
+        <ul class="icon-links">
+          <li class="icon-link-item"><a href="{{ site.profile_links.twitter_url }}" title="Twitter" class="icon-link" itemprop="sameAs">{% include icons/icon-twitter.html %}</a></li>
+          <li class="icon-link-item"><a href="{{ site.profile_links.medium_url }}" title="GitHub" title="Medium" class="icon-link" itemprop="url">{% include icons/icon-medium.html %}</a></li>
+          <li class="icon-link-item"><a href="{{ site.profile_links.dribbble_url }}" title="Dribbble" class="icon-link" itemprop="sameAs">{% include icons/icon-dribbble.html %}</a></li>
+          <li class="icon-link-item"><a href="{{ site.profile_links.profile_linkedin_url }}" title="LinkedIn" class="icon-link" itemprop="sameAs">{% include icons/icon-linkedin.html %}</a></li>
+        </ul>
+        <p class="legal">Design forked from <a href="https://github.com/jglovier/resume-template/tree/gh-pages" target="_blank">resume-template</a> and subsequently bent to my will. © 2024 Francis Wu</p>
       </div>
     </section>
 

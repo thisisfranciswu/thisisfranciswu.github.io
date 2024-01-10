@@ -38,13 +38,13 @@
 }
 
 .icon-links {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 
   .icon-link-item {
     display: inline-block;
-    margin: 0 0.25rem;
+    margin: 0 0.5rem 0 0;
   }
 
   .icon-link {
@@ -203,6 +203,11 @@
       width: 80vw;
       margin: 0 auto 2rem;
     }
-
   }
+
+  .legal {
+    font-size: 0.8rem;
+    margin: 4rem 0 0;
+  }
+
 }
