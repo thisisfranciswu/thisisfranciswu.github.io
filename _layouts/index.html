@@ -104,8 +104,19 @@
         <header class="section-header">
           <h2>Connect</h2>
         </header>
-        {% assign randomNumber = site.time | date: "%N" | modulo: site.data.topics.size %}
-        <p>I'm always up for a chat about design, working together, and {{ site.data.topics[randomNumber].topic }}.</p>
+        <p>I'm always up for a chat about design, working together, and <span id="randomTopic"></span>.</p>
+        <script>
+          const topics = [
+            {% for topic in site.data.topics %}
+              "{{ topic.title }}",
+            {% endfor %}
+          ];        
+          function insertRandomTopic() {
+            const randomIndex = Math.floor(Math.random() * topics.length);
+            document.getElementById("randomTopic").innerHTML = topics[randomIndex];
+          }
+          insertRandomTopic();
+        </script>
         <ul class="icon-links">
           <li class="icon-link-item"><a href="{{ site.profile_links.twitter_url }}" title="Twitter" class="icon-link" itemprop="sameAs">{% include icons/icon-twitter.html %}</a></li>
           <li class="icon-link-item"><a href="{{ site.profile_links.medium_url }}" title="GitHub" title="Medium" class="icon-link" itemprop="url">{% include icons/icon-medium.html %}</a></li>
