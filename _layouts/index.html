@@ -104,10 +104,7 @@
         <header class="section-header">
           <h2>Connect</h2>
         </header>
-        {% assign min = 0 %}
-        {% assign max = site.data.topics.size %}
-        {% assign diff = max | minus: min %}
-        {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+        {% assign randomNumber = site.time | date: "%N" | modulo: site.data.topics.size %}
         <p>I'm always up for a chat about design, working together, and {{ site.data.topics[randomNumber].topic }}.</p>
         <ul class="icon-links">
           <li class="icon-link-item"><a href="{{ site.profile_links.twitter_url }}" title="Twitter" class="icon-link" itemprop="sameAs">{% include icons/icon-twitter.html %}</a></li>
