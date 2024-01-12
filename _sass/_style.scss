@@ -193,14 +193,15 @@
     @include border-radius(0.25rem);
     display: block;
     float: right;
-    height: 20rem;
+    width: 50%;
     margin: 0 0 2rem 2rem;
     rotate: 5deg;
     @include media_mobile {
       float: none;
+      margin: 0;
+      width: 100%;
       height: auto;
-      width: 80vw;
-      margin: 0 auto 2rem;
+      rotate: none;
     }
   }
 
