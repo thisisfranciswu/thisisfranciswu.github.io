@@ -1,6 +1,6 @@
 # Site settings
 title: "Francis Wu, Product Designer"
-description: "I'm a Montreal-based product designer. I craft scalable, user-friendly software without compromising agility."
+description: "I'm a cross-functional product designer based in Montreal. I craft scalable, user-friendly software without compromising agility."
 
 # Build settings
 markdown: kramdown
@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Profile settings
-profile_summary: "I'm a multi-disciplinary product designer based in Montreal. I specialize in building user-friendly software products that can scale without compromising your agility."
+profile_summary: "I'm a cross-functional product designer based in Montreal. I specialize in building user-friendly software products that can scale without compromising your agility."
 
 # Profile social links
 profile_links:
