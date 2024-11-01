@@ -21,20 +21,10 @@
   duration: May 2012 &mdash; Jun 2015
   summary: A talent engagement platform used by brands such as Home Depot, Scotiabank, and Roots Clothing Company. Developed its design language system and its front-end. Learned BDD-related tools to increase development velocity by 15%.
 
-- company: UrbanOrca
-  position: User Experience Designer
-  duration: Jan 2012 &mdash; May 2012
-  summary: UrbanOrca was a friend finder and social network where I had learned to design and integrate within the Django web development framework. I also had the opportunity to work with, and learn from, a technically-savvy and data-informed product manager.
-
 - company: SocialGrapes
   position: User Experience Designer
   duration: Jul 2010 &mdash; Jan 2012
   summary: An oenophile's social network, which received an honourable mention by Robert Scoble during the 2010 San Francisco Vintners Market. Developed design language system for both web and mobile apps while also developing the web app’s front-end and design language system.
-
-- company: Webdweller
-  position: Web Designer and Front-End Developer
-  duration: Oct 2009 &mdash; Feb 2010 
-  summary: Webdweller was a brand engagement platform where I further refined my skills as a web designer and front-end developer specializing in designing for the Ruby on Rails web development framework and using CSS preprocessors. Beyond front-end development, tasks also included wireframing and paper prototyping.
 
 - company: Standout Jobs
   position: Web Designer/Programmer
@@ -49,5 +39,5 @@
 - company: Mediagrif Interactive Technologies
   position: Generalist
   duration: Jun 1998 &mdash; Sep 2003
-  summary: Mediagrif builds and operates B2B marketplaces for resellers. Provided customer support, often technical in nature. Performed database entry before improving its processes and rebuilding its core tool to increase database entry by 500%. Joined its marketing department and further developed skills in web design and brand development. Subsequently engaged in blogging and usability evangelism within the organization.
+  summary: Mediagrif builds and operates B2B marketplaces for resellers. Provided customer support, often technical in nature. Performed database entry before streamlining its workflow and rebuilding its core tool to increase database entry by 500%. Joined its marketing department and further developed skills in web design and brand development. Subsequently engaged in blogging and usability evangelism within the organization.
   url: mediagrif.com
