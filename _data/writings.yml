@@ -1,5 +1,5 @@
 - name: The Opportunity Cost of Rigidity
-  abstract: Justifying Prioritizing Design Systems, Robust DevOps Culture, and Effective Product Management Through the Lens of Risk
+  abstract: Use risk to justify design systems, strong DevOps, and effective product management.
   date: Jan 2024
   url: https://medium.com/design-bootcamp/the-opportunity-cost-of-rigidity-8e1f7d5c3f55
   image_url: images/writings/opportunity_cost.jpg
@@ -13,7 +13,7 @@
   image_alt: Abstraction of emerging complexity
 
 - name: Gherkin for Designers
-  abstract: Gherkin is a powerful tool for describing system behaviours. By annotating your design deliverables with Gherkin, you will win the hearts of product, development, and documentation teams.
+  abstract: Learn Gherkin to win the hearts of product, development, and documentation teams.
   date: Apr 2022
   url: https://uxdesign.cc/gherkin-for-designers-e54def12ce77
   image_url: images/writings/gherkin.jpg
