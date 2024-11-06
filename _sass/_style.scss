@@ -137,6 +137,26 @@
         }
       }
     }
+    &.is-quote {
+      .profile-item-quote {
+        @include sans_bold;
+        margin: 0;
+        font-size: 1.125rem;
+        &:before {
+          @include sans_bold;
+          content: "“";
+          position: absolute;
+          top: -2rem;
+          left: -2.5rem;
+          font-size: 8rem;
+          line-height: 1;
+          opacity: 0.1;
+        }
+      }
+      .profile-item-byline {
+        margin: 0;
+      }
+    }
     &:last-child {
       margin: 0;
     }

@@ -88,6 +88,24 @@
     <section class="content-section">
       <div class="wrapper">
         <header class="section-header">
+          <h2>Testimonials</h2>
+        </header>
+        {% for testimonial in site.data.testimonials %}
+          <div class="profile-item is-quote">
+            <q class="profile-item-quote">{{ testimonial.quote }}</q>
+            <p class="profile-item-byline">
+              ― {{ testimonial.author }},
+              {{ testimonial.title }} at
+              {{ testimonial.company }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="wrapper">
+        <header class="section-header">
           <h2>About</h2>
         </header>
         <img src="images/about.jpg" alt="Head and shoulders shot of Francis Wu" class="about"/>
