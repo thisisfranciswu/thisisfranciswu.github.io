@@ -1,6 +1,6 @@
 # Site settings
 title: "Francis Wu, Product Designer"
-description: "I'm a cross-functional product designer based in Montreal. I like to design workplace apps that aren't awful."
+description: "I'm a cross-functional product designer based in Montreal with two decades of experience. I like to design workplace apps that aren't awful."
 
 # Build settings
 markdown: kramdown
@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Profile settings
-profile_summary: "I'm a cross-functional product designer based in Montreal. I like to design workplace apps that aren't awful."
+profile_summary: "I'm a cross-functional product designer based in Montreal with two decades of experience. I like to design workplace apps that aren't awful."
 
 # Profile social links
 profile_links:
