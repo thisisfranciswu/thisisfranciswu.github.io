@@ -92,16 +92,49 @@
   font-weight: 700;
 }
 
-// layout
+// dark mode
 
-@mixin section_border {
-  border-top: 4px solid #c7c7c7;
-  border-bottom: 2px solid #c7c7c7;
-  padding: .2rem 0 .4rem;
-}
-
-@mixin section_border_thin {
-  border-top: 1px solid #c7c7c7;
-  border-bottom: 1px solid #c7c7c7;
-  padding: .2rem 0 .2rem;
+@mixin dark-mode {
+  background: $canvasDark;
+  body {
+    color: $neutralDefaultDark;
+  }
+  a {
+    color: $primaryDefaultDark;
+  }
+  .content-section {
+    .profile-item {
+      &.is-timeline {
+        &:before {
+          border-color: $primarySubduedDark;
+        }
+        &:after {
+          border-color: $primarySubduedDark;
+        }
+      }
+      &.is-quote {
+        .profile-item-quote {
+          &:before {
+            color: $primarySubduedDark;
+          }
+        }
+      }
+    }
+  }
+  .icon-links {
+    .icon-link {
+      .icon {
+        path {
+          fill: $neutralDefaultDark;
+        }
+      }
+      &:hover {
+        .icon {
+          path {
+            fill: $neutralSubduedDark;
+          }
+        }
+      }
+    }
+  }
 }
