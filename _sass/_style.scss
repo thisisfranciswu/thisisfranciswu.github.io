@@ -226,10 +226,10 @@ html.dark-mode {
     rotate: 5deg;
     @include media_mobile {
       float: none;
-      margin: 0;
+      margin-left: 0;
       width: 100%;
       height: auto;
-      rotate: none;
+      rotate: -2.5deg;
     }
   }
 
