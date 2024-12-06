@@ -137,4 +137,13 @@
       }
     }
   }
+  ::-moz-selection {
+    background: $primaryDefaultDark;
+    color: $neutralDefault;
+  }
+  ::selection {
+    background: $primaryDefaultDark;
+    color: $neutralDefault;
+  }
+
 }
