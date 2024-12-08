@@ -12,9 +12,7 @@ html.dark-mode {
 // util
 
 .section-header {
-  @include sans_light;
   margin-bottom: 3rem;
-  
   h2 {
     font-size: 1.5rem;
     margin: 0;
@@ -179,7 +177,6 @@ html.dark-mode {
     }
 
     .profile-item-details {
-      @include sans_light;
       letter-spacing: 0.125rem;
       margin: 0 0 .25rem;
       font-size: 0.75rem;
