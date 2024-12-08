@@ -7,16 +7,16 @@ $grid-gutter:     1.25rem !default;
 // Colors
 
 $canvas:              #FBF7F4;
+$primaryDefault:	  #74492A;
+$primarySubdued:	  rgba(116, 73, 42, 0.81);
 $neutralDefault:      #2D1C10;
-$neutralSubdued:	    rgba(45, 28 , 16, 0.63);
-$primaryDefault:	    #74492A;
-$primarySubdued:	    rgba(116, 73, 42, 0.81);
+$neutralSubdued:	  rgba(45, 28, 16, 0.62);
 
 $canvasDark:          #2D1C10;
-$neutralDefaultDark:  #F8F4F2;
-$neutralSubduedDark:  rgba(248, 244, 242, 0.49);
-$primaryDefaultDark:  #C9AC97;
-$primarySubduedDark:  rgba(201, 172, 151, 0.71);
+$primaryDefaultDark:  #BA977D;
+$primarySubduedDark:  rgba(186, 151, 125, 0.82);
+$neutralDefaultDark:  #E8DCD4;
+$neutralSubduedDark:  rgba(232, 220, 212, 0.54);
 
 // Styles
 $text_color:        $neutralDefault;
