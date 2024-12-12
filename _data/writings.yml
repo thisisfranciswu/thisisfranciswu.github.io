@@ -1,34 +1,41 @@
+- name: A Systematic Approach to Generating Enterprise UI Color Palettes
+  abstract: How Can You Craft Color Palettes that Balance Accessibility, Brand Identity, and Scale?
+  date: Dec 2024
+  url: https://medium.com/@thisisfranciswu/a-systematic-approach-to-generating-enterprise-ui-color-palettes-ecaf0c164c17
+  image_url: images/writings/enterprise_colors.jpg
+  image_alt: Abstract generative AI illustration of UI design elements, including color swatches, grids, and geometric shapes, symbolizing the process of creating color palettes.
+
 - name: The Opportunity Cost of Rigidity
   abstract: Use risk to justify design systems, strong DevOps, and effective product management.
   date: Jan 2024
   url: https://medium.com/design-bootcamp/the-opportunity-cost-of-rigidity-8e1f7d5c3f55
   image_url: images/writings/opportunity_cost.jpg
-  image_alt: A ship in a stormy seascape in the style of Ivan Aivazovsky
+  image_alt: A ship in a stormy seascape in the style of Ivan Aivazovsky.
 
 - name: Resolving complex forms with OOUX
   abstract: Simplify complex forms by recognizing complex objects.
   date: Sep 2023
   url: https://uxdesign.cc/resolving-complex-forms-f104e476f3ff
   image_url: images/writings/complex_forms.jpg
-  image_alt: Abstraction of emerging complexity
+  image_alt: Abstraction of emerging complexity.
 
 - name: Gherkin for Designers
   abstract: Learn Gherkin to win the hearts of product, development, and documentation teams.
   date: Apr 2022
   url: https://uxdesign.cc/gherkin-for-designers-e54def12ce77
   image_url: images/writings/gherkin.jpg
-  image_alt: Photo of gherkins
+  image_alt: Photo of gherkins.
 
 - name: Designing Hazel’s Accessible Color System
   abstract: What happens when your simple color palette also needs to accommodate interaction states, sentiment, accessibility requirements, and more?
   date: Mar 2022
   url: https://medium.com/@thisisfranciswu/designing-hazels-accessible-color-system-part-1-8a73a2298c35
   image_url: images/writings/color_system.jpg
-  image_alt: Diagram illustrating Asana’s design tokens
+  image_alt: Diagram illustrating Asana’s design tokens.
 
 - name: Designing collections for mobile web experiences
   abstract: How do you allow users to search, filter, sort, and perform batch operations on collections when space is so limited?
   date: Mar 2022
   url: https://uxdesign.cc/designing-collections-for-mobile-web-experiences-7b89da9aff09
   image_url: images/writings/mobile_collections.jpg
-  image_alt: Screenshots illustrating desktop to mobile conversion
+  image_alt: Screenshots illustrating desktop to mobile conversion.
