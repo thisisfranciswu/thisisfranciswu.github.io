@@ -1,9 +1,9 @@
-- name: A Systematic Approach to Generating Enterprise UI Color Palettes
-  abstract: How Can You Craft Color Palettes that Balance Accessibility, Brand Identity, and Scale?
+- name: A systematic approach to generating enterprise UI color palettes
+  abstract: How can you craft color palettes that balance accessibility, brand identity, and scale?
   date: Dec 2024
   url: https://uxdesign.cc/a-systematic-approach-to-generating-enterprise-ui-color-palettes-ecaf0c164c17
   image_url: images/writings/enterprise_colors.jpg
-  image_alt: Abstract generative AI illustration of UI design elements, including color swatches, grids, and geometric shapes, symbolizing the process of creating color palettes.
+  image_alt: Light and dark mode color palettes for my personal website set against an abstract backdrop.
 
 - name: The Opportunity Cost of Rigidity
   abstract: Use risk to justify design systems, strong DevOps, and effective product management.
