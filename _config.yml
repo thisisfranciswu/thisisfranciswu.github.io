@@ -1,6 +1,6 @@
 # Site settings
 title: "Francis Wu, Product Designer"
-description: "I'm a Montreal-based product designer with a focus on product strategy, implementation, and accessibility. I design B2B, enterprise, and workplace apps that aren't awful."
+description: "I'm a product-forward designer who translates ambiguity into high-impact systems that turn users into heroes of their workflows."
 
 # Build settings
 markdown: kramdown
@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Profile settings
-profile_summary: "I'm a Montreal-based product designer with a focus on product strategy, implementation, and accessibility. I design B2B, enterprise, and workplace apps that aren't awful."
+profile_summary: "I'm a product-forward designer who translates ambiguity into high-impact systems that turn users into heroes of their workflows."
 
 # Profile social links
 profile_links:
