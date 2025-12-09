@@ -1,6 +1,6 @@
 # Site settings
 title: "Francis Wu, Product Designer"
-description: "I'm a product-forward designer who translates ambiguity into high-impact systems that turn users into heroes of their workflows."
+description: "I'm a product-forward cross-functional designer who translates ambiguity into high-impact systems that turn users into heroes of their workflows."
 
 # Build settings
 markdown: kramdown
@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Profile settings
-profile_summary: "I'm a product-forward designer who translates ambiguity into high-impact systems that turn users into heroes of their workflows."
+profile_summary: "I'm a product-forward cross-functional designer who translates ambiguity into high-impact systems that turn users into heroes of their workflows."
 
 # Profile social links
 profile_links:
