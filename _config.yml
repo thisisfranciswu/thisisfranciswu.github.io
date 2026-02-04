@@ -1,7 +1,3 @@
-# Site settings
-title: "Francis Wu, Product Manager and Designer"
-description: "Over 25 years of experience in web applications and SaaS, specializing in eliminating requirement ambiguity and transforming unstructured stakeholder requests into low-risk MVPs."
-
 # Build settings
 markdown: kramdown
 sass:
@@ -10,7 +6,6 @@ sass:
 
 # Profile social links
 profile_links:
-  x_url:                 "https://x.com/thisisfranciswu"
   mastadon_url:          "https://mstdn.ca/@thisisfranciswu"
   linkedin_url:          "https://linkedin.com/in/thisisfranciswu"
   medium_url:            "https://medium.com/@thisisfranciswu"

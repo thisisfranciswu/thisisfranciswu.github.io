@@ -1,3 +1,167 @@
 ---
 layout: index
+title: "Francis Wu, Product Manager and Designer"
+description: "Over 25 years of experience in web applications and SaaS, specializing in eliminating requirement ambiguity and transforming unstructured stakeholder requests into low-risk MVPs."
 ---
+
+<header class="page-header">
+
+  <div class="wrapper">
+    <img src="images/avatar.jpg" alt="Headshot of Francis Wu" class="header-avatar">
+    <h1 class="header-name">Hi, I'm Francis Wu 👋</h1>
+    <p class="executive-summary">
+      <strong>Product Manager and Designer</strong> with <strong>over 25 years of experience in web applications and SaaS</strong>, specializing in eliminating requirement ambiguity and transforming unstructured stakeholder requests into <strong>low-risk MVPs</strong>. Technical background in design implementation for Ruby on Rails with a career-long track record of delivering scalable solutions across <strong>startups and enterprise</strong> environments.
+    </p>
+  </div>
+
+</header>
+
+<section class="content-section">
+  <div class="wrapper">
+    <header class="section-header">
+      <h2>Portfolio</h2>
+    </header>
+    <div class="profile-item has-thumbnail">
+      <div class="profile-item-not-thumbnail">
+        <h3 class="profile-item-title">
+          <a href="#" target="_blank">asdf</a>
+        </h3>
+        <p class="profile-item-details">asdf</p>
+        <p class="profile-item-description">asdf</p>
+      </div>
+      <div class="profile-item-thumbnail">
+        <img src="#" alt="asdf"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrapper">
+    <header class="section-header">
+      <h2>Articles</h2>
+    </header>
+    {% for writing in site.data.writings %}
+      <div class="profile-item has-thumbnail">
+        <div class="profile-item-not-thumbnail">
+          <h3 class="profile-item-title">
+            <a href="{{ writing.url }}" target="_blank">{{ writing.name }}</a>
+          </h3>
+          <p class="profile-item-details">{{ writing.date }}</p>
+          <p class="profile-item-description">{{ writing.abstract }}</p>
+        </div>
+        <div class="profile-item-thumbnail">
+          <img src="{{ writing.image_url }}" alt="{{ writing.image_alt }}"/>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrapper">
+    <header class="section-header">
+      <h2>Notable Experience</h2>
+    </header>
+    {% for work in site.data.work %}
+      <div class="profile-item is-timeline">
+        <h3 class="profile-item-title subdued">
+          <strong>{{ work.position }}</strong>
+          at
+          <strong>
+            {% if work.url %}
+              <a href="{{ work.url }}" target="_blank">{{ work.company }}</a>
+            {% else %}
+              {{ work.company }}
+            {% endif %}
+          </strong>
+        </h3>
+        <p class="profile-item-details">{{ work.duration }}</p>
+        <p class="profile-item-description">{{ work.summary }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrapper">
+    <header class="section-header">
+      <h2>Education and Certificates</h2>
+    </header>
+    {% for education in site.data.education %}
+      <div class="profile-item is-timeline">
+        <h3 class="profile-item-title">{{ education.name }}</h3>
+        <p class="profile-item-details">{{ education.date }}</p>
+        <p class="profile-item-description">
+          {% if education.url %}
+            <a href="{{ education.url }}" target="_blank">{{ education.credential }}</a>
+          {% else %}
+            {{ education.credential }}
+          {% endif %}
+          issued by
+          {{ education.issuer }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrapper">
+    <header class="section-header">
+      <h2>Testimonials</h2>
+    </header>
+    {% for testimonial in site.data.testimonials %}
+      <div class="profile-item is-quote">
+        <q class="profile-item-quote">{{ testimonial.quote }}</q>
+        <p class="profile-item-byline">
+          ― {{ testimonial.author }},
+          {{ testimonial.title }} at
+          {{ testimonial.company }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrapper">
+    <header class="section-header">
+      <h2>About</h2>
+    </header>
+    <img src="images/about.jpg" alt="Head and shoulders shot of Francis Wu" class="about"/>
+    <p>Hi! I'm Francis Wu, a husband, dad, and product designer based in Montreal. I've had the good fortune of working with some amazing people who taught me so much. Now I try to pay it forward. I'm currently a product designer at <a href="https://negosh.com" target="_blank">Negosh</a>.</p>
+    <p>I started tinkering with design at the age of 10 when my family got an <a href="https://en.wikipedia.org/wiki/Apple_IIc" target="_blank">Apple IIc</a> and a copy of <a href="https://en.wikipedia.org/wiki/The_Print_Shop" target="_blank">The Print Shop</a>. What followed was a long love affair with PCs and bootlegged copies of Photoshop that culminated in a degree in computer science.</p>
+    <p>Joining a B2B internet startup in '98 revealed customer issues obviously rooted in poor UI design. I thought this was something I could help people with. I read <a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things" target="_blank">The Design of Everyday Things</a> and <a href="https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think" target="_blank">Don't Make Me Think</a>. I learned HTML and CSS, and grew into what we'd call today a <a href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/" target="_blank">Front-of-the-Front-End Web Developer</a> or UX Engineer .</p>
+    <p>Since then, I've worked with test-driven developers and data-informed product managers. I eventually became a product manager myself, leading a great team that deployed code multitple times a day. I've seen what "good" looks like and I'm committed to helping others recognize they need not settle for less.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrapper">
+    <header class="section-header">
+      <h2>Connect</h2>
+    </header>
+    <p>I'm always up for a chat about design, working together, and <span id="randomTopic"></span>.</p>
+    <script>
+      const topics = [
+        {% for topic in site.data.topics %}
+          "{{ topic.title }}",
+        {% endfor %}
+      ];        
+      function insertRandomTopic() {
+        const randomIndex = Math.floor(Math.random() * topics.length);
+        document.getElementById("randomTopic").innerHTML = topics[randomIndex];
+      }
+      insertRandomTopic();
+    </script>
+    <ul class="icon-links">
+      <li class="icon-link-item"><a href="{{ site.profile_links.medium_url }}" rel="me" title="Medium" title="Medium" class="icon-link" itemprop="sameAs">{% include icons/icon-medium.html %}</a></li>
+      <li class="icon-link-item"><a href="{{ site.profile_links.linkedin_url }}" rel="me" title="LinkedIn" class="icon-link" itemprop="sameAs">{% include icons/icon-linkedin.html %}</a></li>
+      <li class="icon-link-item"><a href="{{ site.profile_links.mastadon_url }}" rel="me"  title="Mastadon" class="icon-link" itemprop="sameAs">{% include icons/icon-mastadon.html %}</a></li>
+      <li class="icon-link-item"><a href="{{ site.profile_links.threads_url }}" rel="me"  title="Threads" class="icon-link" itemprop="sameAs">{% include icons/icon-threads.html %}</a></li>
+      <li class="icon-link-item"><a href="{{ site.profile_links.bluesky_url }}" rel="me"  title="Bluesky" class="icon-link" itemprop="sameAs">{% include icons/icon-bluesky.html %}</a></li>
+    </ul>
+    <p class="legal">Forked from <a href="https://github.com/jglovier/resume-template" target="_blank">resume-template</a> and subsequently hand-adapted by Francis Wu © 2026</p>
+  </div>
+</section>
