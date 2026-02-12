@@ -56,6 +56,15 @@ a {
   max-width: 45rem;
   margin: 0 auto;
   zoom: 1;
+  &.lg {
+    max-width: 75rem;
+  }
+  &.no-top-padding {
+    padding-top: 0;
+  }
+  &.no-bottom-padding {
+    padding-bottom: 0;
+  }
 }
 
 // clearfix (now called group,

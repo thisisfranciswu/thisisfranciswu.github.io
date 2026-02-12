@@ -102,6 +102,17 @@
   a {
     color: $primaryDefaultDark;
   }
+  figure {
+    img {
+      border: 1px solid $neutralSoftDark;
+      &.feature-announcement {
+        box-shadow: none;
+      }
+    }
+    figcaption {
+      color: $neutralSubduedDark;
+    }
+  }
   .content-section {
     .profile-item {
       &.is-timeline {
@@ -118,6 +129,11 @@
             color: $primarySubduedDark;
           }
         }
+      }
+    }
+    .impact-items {
+      .impact-item {
+        background: $neutralSoftDark;
       }
     }
   }
@@ -145,5 +161,4 @@
     background: $primaryDefaultDark;
     color: $neutralDefault;
   }
-
 }
