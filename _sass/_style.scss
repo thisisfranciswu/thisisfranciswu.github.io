@@ -277,10 +277,12 @@ figure {
     @include border-radius(0.25rem);
     border: 1px solid $neutralSoft;
     &.feature-announcement {
-      max-width: 25rem;
-      margin: 0rem auto;
       @include border-radius(1rem);
       box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.05), 0 8px 20px -4px rgba(0, 0, 0, 0.05), 0 20px 36px 0 rgba(0, 0, 0, 0.05);
+    }
+    &.sm {
+      max-width: 25rem;
+      margin: 0rem auto;
     }
   }
   figcaption {
