@@ -9,43 +9,224 @@ html.dark-mode {
   @include dark-mode;
 }
 
-// util
-
-.section-header {
-  margin-bottom: 3rem;
-  h2 {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-
+.headshot {
+  @include border-radius(6.25rem);
+  width: 6.25rem;
+  height: 6.25rem;
+  overflow: hidden;
+  display: block;
+  margin: 0 0 3rem;
 }
 
-// page header styles
+h1 {
+  @include sans_bold;
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
 
-.page-header {
-
-  .header-avatar {
-    @include border-radius(6.25rem);
-    width: 6.25rem;
-    height: 6.25rem;
-    overflow: hidden;
-    display: block;
-    margin: 0 0 3rem;
+h2 {
+  font-size: 1.5rem;
+  @include media_larger_than_mobile {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
   }
+  @include media_mobile {
+    margin-top: 4rem;
+  }
+}
 
-  .header-name {
+.executive-summary {
+  font-size: 1.25rem;
+  margin: 0;
+  @include sans_light;
+  strong {
     @include sans_bold;
-    font-size: 2.5rem;
-    margin: 0 0 1rem;
-    line-height: 1.2;
   }
+}
 
-  .executive-summary {
-    font-size: 1.25rem;
+// Profile content styles
+
+.profile-item {
+  margin-bottom: 2rem;
+  position: relative;
+  &.has-thumbnail { display: flex; }
+  &.is-timeline {
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 1rem;
+      height: 1rem;
+      border: 0.125rem solid $primarySubdued;
+      border-radius: 1rem;
+      top: 0.625rem;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 0;
+      border-style: solid;
+      border-color: $primarySubdued;
+      border-width: 0 0.0625rem;
+      bottom: -2.625rem;
+      top: 1.625rem;
+    }
+    &.is-last {
+      &:after {
+        display: none;
+      }
+    }
+    @include media_larger_than_mobile {
+      padding-left: 14rem;
+      &:before { // Timeline node
+        left: 11.375rem;
+      }
+      &:after { // Timeline edge
+        left: 11.8125rem;
+      }
+      .profile-item-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10rem;
+        text-align: right;
+      }
+    }
+    @include media_mobile {
+      padding-left: 2rem;
+      &:before {
+        left: 0;
+      }
+      &:after {
+        left: 0.4375rem;
+      }
+    }
+  }
+  &:last-child {
     margin: 0;
   }
 
+  .profile-item-title {
+    @include sans_bold;
+    margin: 0;
+    font-size: 1.125rem;
+    &.subdued {
+      @include sans_light;
+    }
+  }
+
+  .profile-item-details {
+    letter-spacing: 0.125rem;
+    margin: 0 0 .25rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 3;
+  }
+
+  .profile-item-description {
+    margin: 0 0 0 0;
+  }
+
+  .profile-item-not-thumbnail {
+    flex: 1 1 auto;
+  }
+  .profile-item-thumbnail {
+    margin: 0.625rem 0;
+    height: 6.875rem;
+    min-width: 6.875rem;
+    max-width: 6.875rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    @include border-radius(0.25rem);
+    @include media_mobile {
+      height: 3.875rem;
+      min-width: 3.875rem;
+      max-width: 3.875rem;
+      margin-left: 1.5rem;
+    }
+    img {
+      display: block;
+      height: 100%;
+    }
+  }
 }
+
+.impact-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  gap: 2rem;
+  @include media_mobile {
+    flex-direction: column;
+  }
+  .impact-item {
+    @include border-radius(0.5rem);
+    background: $neutralSoft;
+    display: block;
+    flex: 1;
+    align-self: auto;
+    order: 0;
+    padding: 2rem;
+    .impact-item-metric {
+      font-size: 3.5rem;
+      line-height: 1;        
+      margin: 0 0 0.5rem;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    .impact-item-description {
+      margin: 0;
+    }
+  }
+}
+  
+.legal {
+  font-size: 0.8rem;
+  margin: 3rem 0 0;
+}
+
+figure {
+  margin: 2rem auto;
+  img {
+    display: block;
+    width: 100%;
+    @include border-radius(0.25rem);
+    border: 1px solid $neutralSoft;
+    &.feature-announcement {
+      @include border-radius(1rem);
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.05), 0 8px 20px -4px rgba(0, 0, 0, 0.05), 0 20px 36px 0 rgba(0, 0, 0, 0.05);
+    }
+    &.sm {
+      max-width: 25rem;
+      margin: 0rem auto;
+    }
+  }
+  figcaption {
+    margin: 0.25rem 0 0;
+    font-size: 0.875rem;
+    color: $neutralSubdued;
+    text-align: center;
+  }
+}
+
+.breadcrumbs {
+  margin-top: 0;
+  &:last-of-type {
+    margin: 4rem 0 0;
+  }
+}
+
 
 .icon-links {
   margin: 0;
@@ -79,219 +260,4 @@ html.dark-mode {
     }
   }
 
-}
-
-// Profile content styles
-
-.content-section {
-
-  .profile-item {
-    margin-bottom: 2rem;
-    position: relative;
-    &.has-thumbnail { display: flex; }
-    &.is-timeline {
-      &:before {
-        display: block;
-        position: absolute;
-        content: "";
-        width: 1rem;
-        height: 1rem;
-        border: 0.125rem solid $primarySubdued;
-        border-radius: 1rem;
-        top: 0.625rem;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-      }
-      &:after {
-        display: block;
-        position: absolute;
-        content: "";
-        width: 0;
-        border-style: solid;
-        border-color: $primarySubdued;
-        border-width: 0 0.0625rem;
-        bottom: -2.625rem;
-        top: 1.625rem;
-      }
-      &:last-child {
-        &:after {
-          display: none;
-        }
-      }
-      @include media_larger_than_mobile {
-        padding-left: 14rem;
-        &:before { // Timeline node
-          left: 11.375rem;
-        }
-        &:after { // Timeline edge
-          left: 11.8125rem;
-        }
-        .profile-item-details {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 10rem;
-          text-align: right;
-        }
-      }
-      @include media_mobile {
-        padding-left: 2rem;
-        &:before {
-          left: 0;
-        }
-        &:after {
-          left: 0.4375rem;
-        }
-      }
-    }
-    &.is-quote {
-      .profile-item-quote {
-        @include sans_bold;
-        margin: 0;
-        font-size: 1.125rem;
-        &:before {
-          @include sans_bold;
-          content: "“";
-          position: absolute;
-          top: -0.5rem;
-          left: -4rem;
-          font-size: 8rem;
-          line-height: 1;
-          color: $primarySubdued;
-        }
-      }
-      .profile-item-byline {
-        margin: 0;
-      }
-    }
-    &:last-child {
-      margin: 0;
-    }
-
-    .profile-item-title {
-      @include sans_bold;
-      margin: 0;
-      font-size: 1.125rem;
-      &.subdued {
-        @include sans_light;
-      }
-    }
-
-    .profile-item-details {
-      letter-spacing: 0.125rem;
-      margin: 0 0 .25rem;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      line-height: 3;
-    }
-
-    .profile-item-description {
-      margin: 0 0 0 0;
-    }
-
-    .profile-item-not-thumbnail {
-      flex: 1 1 auto;
-    }
-    .profile-item-thumbnail {
-      margin: 0.625rem 0;
-      height: 6.875rem;
-      min-width: 6.875rem;
-      max-width: 6.875rem;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      margin-left: 2rem;
-      @include border-radius(0.25rem);
-      @include media_mobile {
-        height: 3.875rem;
-        min-width: 3.875rem;
-        max-width: 3.875rem;
-        margin-left: 1.5rem;
-      }
-      img {
-        display: block;
-        height: 100%;
-      }
-    }
-  }
-
-  .impact-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    gap: 2rem;
-    @include media_mobile {
-      flex-direction: column;
-    }
-    .impact-item {
-      @include border-radius(0.5rem);
-      background: $neutralSoft;
-      display: block;
-      flex: 1;
-      align-self: auto;
-      order: 0;
-      padding: 2rem;
-      .impact-item-metric {
-        font-size: 3.5rem;
-        line-height: 1;        
-        margin: 0 0 0.5rem;
-      }
-      .impact-item-description {
-        margin: 0;
-      }
-    }
-  }
-
-  .about {
-    @include border-radius(0.25rem);
-    display: block;
-    float: right;
-    width: 50%;
-    margin: 0 0 2rem 2rem;
-    rotate: 5deg;
-    @include media_mobile {
-      float: none;
-      margin-left: 0;
-      width: 100%;
-      height: auto;
-      rotate: -2.5deg;
-    }
-  }
-
-  .legal {
-    font-size: 0.8rem;
-    margin: 3rem 0 0;
-  }
-
-}
-
-figure {
-  margin: 2rem auto;
-  img {
-    display: block;
-    width: 100%;
-    @include border-radius(0.25rem);
-    border: 1px solid $neutralSoft;
-    &.feature-announcement {
-      @include border-radius(1rem);
-      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.05), 0 8px 20px -4px rgba(0, 0, 0, 0.05), 0 20px 36px 0 rgba(0, 0, 0, 0.05);
-    }
-    &.sm {
-      max-width: 25rem;
-      margin: 0rem auto;
-    }
-  }
-  figcaption {
-    margin: 0.25rem 0 0;
-    font-size: 0.875rem;
-    color: $neutralSubdued;
-    text-align: center;
-  }
-  &.cover {
-    margin: 0;
-  }
 }

@@ -113,28 +113,26 @@
       color: $neutralSubduedDark;
     }
   }
-  .content-section {
-    .profile-item {
-      &.is-timeline {
-        &:before {
-          border-color: $primarySubduedDark;
-        }
-        &:after {
-          border-color: $primarySubduedDark;
-        }
+  .profile-item {
+    &.is-timeline {
+      &:before {
+        border-color: $primarySubduedDark;
       }
-      &.is-quote {
-        .profile-item-quote {
-          &:before {
-            color: $primarySubduedDark;
-          }
+      &:after {
+        border-color: $primarySubduedDark;
+      }
+    }
+    &.is-quote {
+      .profile-item-quote {
+        &:before {
+          color: $primarySubduedDark;
         }
       }
     }
-    .impact-items {
-      .impact-item {
-        background: $neutralSoftDark;
-      }
+  }
+  .impact-items {
+    .impact-item {
+      background: $neutralSoftDark;
     }
   }
   .icon-links {

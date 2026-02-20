@@ -4,97 +4,114 @@ title: "Francis Wu, Product Manager and Designer"
 description: "Over 25 years of experience in web applications and SaaS, specializing in eliminating requirement ambiguity and transforming unstructured stakeholder requests into low-risk MVPs."
 ---
 
-<header class="page-header">
+<img src="images/avatar.jpg" alt="Headshot of Francis Wu" class="headshot">
+<h1>Hi, I'm Francis Wu 👋</h1>
+<p class="executive-summary">
+  <strong>Product Manager and Designer</strong> with <strong>over 25 years of experience in web applications and SaaS</strong>, specializing in eliminating requirement ambiguity and transforming unstructured stakeholder requests into <strong>low-risk MVPs</strong>. Technical background in design implementation for Ruby on Rails with a career-long track record of delivering scalable solutions across <strong>startups and enterprise</strong> environments.
+</p>
 
-  <div class="wrapper">
-    <img src="images/avatar.jpg" alt="Headshot of Francis Wu" class="header-avatar">
-    <h1 class="header-name">Hi, I'm Francis Wu 👋</h1>
-    <p class="executive-summary">
-      <strong>Product Manager and Designer</strong> with <strong>over 25 years of experience in web applications and SaaS</strong>, specializing in eliminating requirement ambiguity and transforming unstructured stakeholder requests into <strong>low-risk MVPs</strong>. Technical background in design implementation for Ruby on Rails with a career-long track record of delivering scalable solutions across <strong>startups and enterprise</strong> environments.
+<h2>Portfolio</h2>
+<div class="profile-item has-thumbnail">
+  <div class="profile-item-not-thumbnail">
+    <h3 class="profile-item-title">
+      <a href="/portfolio/worry-free-transactions">Worry-Free Transactions: No News is Good News</a>
+    </h3>
+    <p class="profile-item-description">Designed a predictive notification system for OneSpan Sign that transformed document "babysitting" into a cost-saving "set-and-forget" experience.</p>
+  </div>
+  <div class="profile-item-thumbnail">
+    <img src="/images/portfolio/worry-free-transactions/thumb.jpg" alt="Worry-Free Transactions notification and inbox"/>
+  </div>
+</div>
+
+<div class="profile-item has-thumbnail">
+  <div class="profile-item-not-thumbnail">
+    <h3 class="profile-item-title">
+      <a href="/portfolio/onespan-design-system">OneSpan Design System: Accessibility at Scale</a>
+    </h3>
+    <p class="profile-item-description">Unified a fragmented, multi-app portfolio into a single, modern visual language that increased design velocity and shielded the company from potential ADA accessibility lawsuits.</p>
+  </div>
+  <div class="profile-item-thumbnail">
+    <img src="/images/portfolio/onespan-design-system/thumb.jpg" alt="Sticker sheet of UI components"/>
+  </div>
+</div>
+
+<div class="profile-item has-thumbnail">
+  <div class="profile-item-not-thumbnail">
+    <h3 class="profile-item-title">
+      <a href="/portfolio/promote">Promote: Google Ads for SMBs</a>
+    </h3>
+    <p class="profile-item-description">Designed and launched a machine learning-powered ad platform that democratized Google Ads for SMBs, acquired by Web.com.</p>
+  </div>
+  <div class="profile-item-thumbnail">
+    <img src="/images/portfolio/promote/thumb.jpg" alt="Mobile and desktop dashboards of a self-serve Google Ads app for SMBs"/>
+  </div>
+</div>
+
+<div class="profile-item has-thumbnail">
+  <div class="profile-item-not-thumbnail">
+    <h3 class="profile-item-title">
+      <a href="/portfolio/socialgrapes">SocialGrapes: Wine for Everyone</a>
+    </h3>
+    <p class="profile-item-description">Democratized wine by building a social network and discovery engine that turned casual drinkers into confident connoisseurs.</p>
+  </div>
+  <div class="profile-item-thumbnail">
+    <img src="/images/portfolio/socialgrapes/thumb.jpg" alt="Wine discovery panels in the SocialGrapes app"/>
+  </div>
+</div>
+
+<h2>Articles</h2>
+{% for writing in site.data.writings %}
+  <div class="profile-item has-thumbnail">
+    <div class="profile-item-not-thumbnail">
+      <h3 class="profile-item-title">
+        <a href="{{ writing.url }}" target="_blank">{{ writing.name }}</a>
+      </h3>
+      <p class="profile-item-details">{{ writing.date }}</p>
+      <p class="profile-item-description">{{ writing.abstract }}</p>
+    </div>
+    <div class="profile-item-thumbnail">
+      <img src="{{ writing.image_url }}" alt="{{ writing.image_alt }}"/>
+    </div>
+  </div>
+{% endfor %}
+
+<h2>Notable Experience</h2>
+{% for work in site.data.work %}
+  <div class="profile-item is-timeline {% if forloop.last %}is-last{% endif %}">
+    <h3 class="profile-item-title subdued">
+      <strong>{{ work.position }}</strong>
+      at
+      <strong>
+        {% if work.url %}
+          <a href="{{ work.url }}" target="_blank">{{ work.company }}</a>
+        {% else %}
+          {{ work.company }}
+        {% endif %}
+      </strong>
+    </h3>
+    <p class="profile-item-details">{{ work.duration }}</p>
+    <p class="profile-item-description">{{ work.summary }}</p>
+  </div>
+{% endfor %}
+
+<h2>Education and Certificates</h2>
+{% for education in site.data.education %}
+  <div class="profile-item is-timeline {% if forloop.last %}is-last{% endif %}">
+    <h3 class="profile-item-title">{{ education.name }}</h3>
+    <p class="profile-item-details">{{ education.date }}</p>
+    <p class="profile-item-description">
+      {% if education.url %}
+        <a href="{{ education.url }}" target="_blank">{{ education.credential }}</a>
+      {% else %}
+        {{ education.credential }}
+      {% endif %}
+      issued by
+      {{ education.issuer }}
     </p>
   </div>
+{% endfor %}
 
-</header>
-
-<section class="content-section">
-  <div class="wrapper">
-    <header class="section-header">
-      <h2>Articles</h2>
-    </header>
-    {% for writing in site.data.writings %}
-      <div class="profile-item has-thumbnail">
-        <div class="profile-item-not-thumbnail">
-          <h3 class="profile-item-title">
-            <a href="{{ writing.url }}" target="_blank">{{ writing.name }}</a>
-          </h3>
-          <p class="profile-item-details">{{ writing.date }}</p>
-          <p class="profile-item-description">{{ writing.abstract }}</p>
-        </div>
-        <div class="profile-item-thumbnail">
-          <img src="{{ writing.image_url }}" alt="{{ writing.image_alt }}"/>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="content-section">
-  <div class="wrapper">
-    <header class="section-header">
-      <h2>Notable Experience</h2>
-    </header>
-    {% for work in site.data.work %}
-      <div class="profile-item is-timeline">
-        <h3 class="profile-item-title subdued">
-          <strong>{{ work.position }}</strong>
-          at
-          <strong>
-            {% if work.url %}
-              <a href="{{ work.url }}" target="_blank">{{ work.company }}</a>
-            {% else %}
-              {{ work.company }}
-            {% endif %}
-          </strong>
-        </h3>
-        <p class="profile-item-details">{{ work.duration }}</p>
-        <p class="profile-item-description">{{ work.summary }}</p>
-      </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="content-section">
-  <div class="wrapper">
-    <header class="section-header">
-      <h2>Education and Certificates</h2>
-    </header>
-    {% for education in site.data.education %}
-      <div class="profile-item is-timeline">
-        <h3 class="profile-item-title">{{ education.name }}</h3>
-        <p class="profile-item-details">{{ education.date }}</p>
-        <p class="profile-item-description">
-          {% if education.url %}
-            <a href="{{ education.url }}" target="_blank">{{ education.credential }}</a>
-          {% else %}
-            {{ education.credential }}
-          {% endif %}
-          issued by
-          {{ education.issuer }}
-        </p>
-      </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="content-section">
-  <div class="wrapper">
-    <header class="section-header">
-      <h2>About</h2>
-    </header>
-    <img src="images/about.jpg" alt="Head and shoulders shot of Francis Wu" class="about"/>
-    <p>Hi! I'm Francis Wu, a husband, dad, and product designer based in Montreal. I've had the good fortune of working with some amazing people who taught me so much. Now I try to pay it forward. I'm currently a product designer at <a href="https://negosh.com" target="_blank">Negosh</a>.</p>
-    <p>I started tinkering with design at the age of 10 when my family got an <a href="https://en.wikipedia.org/wiki/Apple_IIc" target="_blank">Apple IIc</a> and a copy of <a href="https://en.wikipedia.org/wiki/The_Print_Shop" target="_blank">The Print Shop</a>. What followed was a long love affair with PCs and bootlegged copies of Photoshop that culminated in a degree in computer science.</p>
-    <p>Joining a B2B internet startup in '98 revealed customer issues obviously rooted in poor UI design. I thought this was something I could help people with. I read <a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things" target="_blank">The Design of Everyday Things</a> and <a href="https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think" target="_blank">Don't Make Me Think</a>. I learned HTML and CSS, and grew into what we'd call today a <a href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/" target="_blank">Front-of-the-Front-End Web Developer</a> or UX Engineer .</p>
-    <p>Since then, I've worked with test-driven developers and data-informed product managers. I eventually became a product manager myself, leading a great team that deployed code multitple times a day. I've seen what "good" looks like and I'm committed to helping others recognize they need not settle for less.</p>
-  </div>
-</section>
+<h2>About</h2>
+<p>Hi! I'm Francis Wu, a husband, dad, and product designer based in Montreal. I've had the good fortune of working with some amazing people who taught me so much. Now I try to pay it forward. I'm currently a product designer at <a href="https://negosh.com" target="_blank">Negosh</a>.</p>
+<p>I started tinkering with design at the age of 10 when my family got an Apple IIc and a copy of The Print Shop. What followed was a love affair with PCs, bootlegged copies of Photoshop, and a degree in computer science.</p>
+<p>Eventually I learned HTML and CSS, and joined half a dozen startups as founding designer doing front-end development.I've seen what "good" looks like and I'm committed to helping others recognize they need not settle for less.</p>
