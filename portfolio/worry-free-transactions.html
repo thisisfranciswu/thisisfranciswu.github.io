@@ -1,14 +1,14 @@
 ---
 layout: index
 title: "Worry-Free Transactions: No News is Good News"
-description: "Designed a predictive notification system for OneSpan Sign that transformed document \"babysitting\" into a cost-saving \"set-and-forget\" experience."
+description: "Reframed a stakeholder request at OneSpan to unlock a more valuable problem — then built the business case and blueprint before a single screen was designed."
 ---
 
 {% include_relative breadcrumbs.html %}
 
 <h1 class="header-name">Worry-Free Transactions: No News is Good News</h1>
 <p class="executive-summary">
-  Designed a predictive notification system for OneSpan Sign that <strong>transformed document "babysitting" into a cost-saving "set-and-forget" experience</strong>.
+  Reframed a stakeholder request at OneSpan to unlock a more valuable problem — then built the business case and blueprint before a single screen was designed.
 </p>
 
 <figure class="breakout">
@@ -32,20 +32,31 @@ description: "Designed a predictive notification system for OneSpan Sign that tr
     <p class="impact-item-description">Expected resolution rate for at-risk transactions within 12 hours.</p>
   </div>
 </div>
+<p><em>Figures are directional estimates used to build the business case — the feature was deprioritized before shipping.</em></p>
 
-<h2>Process</h2>
-<h3>The "No News is Good News" Pivot</h3>
-<p>While the initial request was for "more logs," I realized users only wanted to know when to intervene, leading to a "set-and-forget" philosophy that respects user attention.</p>
-<h3>Working Backwards</h3>
-<p>Used a mock feature announcement to clearly articulate the problem framing and shape of the solution before a single pixel of the actual tool was designed.</p>
+<h2>The Request Behind the Request</h2>
+<p>A stakeholder asked for better transaction logs. More visibility into what was happening with documents in flight.</p>
+<p>Before designing anything, I pushed on the underlying need. What I found: users weren't asking for logs because they wanted to read logs. They were manually monitoring transactions to catch problems before they expired — babysitting documents because the product gave them no other way to know when to intervene.</p>
+<p>The real request wasn't "more logs." It was "tell me when something needs my attention."</p>
+<p>That reframe changed everything about the solution.</p>
+
+<h2>Working Backwards Before Building Forward</h2>
+<p>Rather than jumping to screens, I wrote a mock feature announcement first — articulating the problem, the solution shape, and the expected outcome in plain language before any design work began.</p>
+<p>This approach, borrowed from Amazon's Working Backwards method, served two purposes: it forced clarity on what we were actually trying to solve, and it created an artifact that could survive shifting priorities — a durable blueprint that didn't require design ramp-up time to reactivate.</p>
 <figure>
   <img class="portfolio-item-image sm feature-announcement" src="/images/portfolio/worry-free-transactions/feature-announcement.jpg" alt="Mock feature announcement for Worry-Free Transactions"/>
   <figcaption>Worry-Free Transactions notification and inbox</figcaption>
 </figure>
-<h3>High-Fidelity for High Stakes</h3>
-<p>Leveraged a mature design system to skip wireframes and present high-fidelity renders, which was essential for managing the expectations of change-sensitive financial clients.</p>
-<h3>The Solution</h3>
-<p>A predictive risk-scoring system that flags documents, prioritizes them in the inbox, and allows users to "snooze" or resolve issues before they expire.</p>
+
+<h3>The Business Case</h3>
+<p>To justify prioritization, I built a directional estimate of the opportunity:</p>
+<p><strong>~$140K</strong> estimated cost saved per customer by automating manual transaction monitoring
+<strong>~40%</strong> expected reduction in failed transactions by alerting users before expiration
+<strong>~90%</strong> expected resolution rate for at-risk transactions within 12 hours.</p>
+<p>These were back-of-napkin figures, not tracked outcomes — but directional estimates are often what it takes to get a feature on the roadmap. The goal was to make the opportunity cost of not building it legible to stakeholders.</p>
+
+<h3>The Solution Shape</h3>
+<p>A predictive risk-scoring system that identifies at-risk transactions, surfaces them in a prioritized inbox, and notifies users via email before documents expire — giving them a window to intervene, snooze, or resolve before a transaction fails.</p>
 <figure class="breakout">
   <img src="/images/portfolio/worry-free-transactions/email-notifications.jpg" alt="Email notification for \“at risk\” transactions"/>  
   <figcaption>Email notification for “at risk” transactions</figcaption>
@@ -59,16 +70,9 @@ description: "Designed a predictive notification system for OneSpan Sign that tr
   <figcaption>“Snooze” options via transactions inbox</figcaption>
 </figure>
 
-<h2>Reality Check</h2>
-<h3>Shifting Priorities</h3>
-<p>Despite clear ROI, the feature was deprioritized to divert resources to escalating requests.</p>
-<h3>The Lesson</h3>
-<p>Anything can be sidelined by shifting business priorities. By capturing intent early through a "Working Backwards" approach, I created a durable blueprint that can be reactivated the moment resources allow.</p>
-
-<h2>Moving Forward</h2>
-<h3>Zero-Waste Handoff</h3>
-<p>Provided Product Marketing with a head start via the "working backwards" mock announcement and eliminated future ramp-up time for engineering by securing high-fidelity, design-system-backed specs early.</p>
-<h3>Ongoing Advocacy</h3>
-<p>Amazon's approach of "Working Backwards" continues to be one of my favorite methods to ensure future projects are grounded in clear, measurable business outcomes.</p>
+<h3>When Priorities Shift</h3>
+<p>The feature was deprioritized before it shipped — resources redirected to escalating customer requests.</p>
+<p>This is where the Working Backwards artifact earned its keep. The mock announcement and high-fidelity specs — built on a mature design system — gave Product Marketing a head start and engineering a ready-to-go blueprint. The work didn't die. It's waiting.</p>
+<p>The lesson: you can't always control the roadmap. You can control how much of your thinking survives the next planning cycle.</p>
 
 {% include_relative breadcrumbs.html %}

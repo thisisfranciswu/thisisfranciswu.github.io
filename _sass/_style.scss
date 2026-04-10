@@ -39,7 +39,6 @@ h2 {
 .executive-summary {
   font-size: 1.25rem;
   margin: 0;
-  @include sans_light;
   strong {
     @include sans_bold;
   }
